@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22529" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:28Z">
+  <suite name="Default suite" duration-ms="24524" started-at="2020-03-21T09:32:51Z" finished-at="2020-03-21T09:33:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22529" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:28Z">
+    <test name="Default test" duration-ms="24524" started-at="2020-03-21T09:32:51Z" finished-at="2020-03-21T09:33:16Z">
       <class name="TestClasses.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="setup" is-config="true" duration-ms="14129" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestClasses.LoginTest@13deb50e]" name="setup" is-config="true" duration-ms="12623" started-at="2020-03-21T09:32:51Z" finished-at="2020-03-21T09:33:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="test" duration-ms="8348" started-at="2020-03-21T04:12:19Z" finished-at="2020-03-21T04:12:28Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestClasses.LoginTest@13deb50e]" name="testLogin" duration-ms="11845" started-at="2020-03-21T09:33:04Z" finished-at="2020-03-21T09:33:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
+        </test-method> <!-- testLogin -->
       </class> <!-- TestClasses.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

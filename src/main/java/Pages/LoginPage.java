@@ -1,51 +1,90 @@
 package Pages;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.By;
-import com.codeborne.selenide.WebDriverRunner;
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Condition.*;
+
+import org.openqa.selenium.WebDriver;
+
 public class LoginPage {
-	
-	WebDriver driver;
-	
-	public LoginPage(WebDriver driver )
-	{
-		this.driver = driver;
-	}
-	
-	  By user99GuruName = By.name("uid");
 
-	  By password99Guru = By.name("password");
+    WebDriver driver;
 
-	  By titleText = By.className("barone");
+    By user99GuruName = By.name("uid");
 
-	  By login = By.name("btnLogin");
-	  
-	   //Set user name in textbox
+    By password99Guru = By.name("password");
 
-	    public void setUserName(String strUserName){
+    By titleText =By.className("barone");
 
-	     	$(user99GuruName).setValue(strUserName);      
+    By login = By.name("btnLogin");
 
-	    }
-	    
-	    public void setPassword(String strUserName){
+    public LoginPage(WebDriver driver){
 
-	     	$(password99Guru).setValue(strUserName);      
+        this.driver = driver;
 
-	    }
-	    
-	    public void clickLogin(){
+    }
 
-	     	$(login).click();
+    //Set user name in textbox
 
-	    }
-	    
-	    public void login(String userName, String Password)
-	    {
-	    	this.setUserName(userName);
-	    	this.setPassword(Password);
-	    	this.clickLogin();
-	    }
+    public void setUserName(String strUserName){
+
+        driver.findElement(user99GuruName).sendKeys(strUserName);
+
+    }
+
+    //Set password in password textbox
+
+    public void setPassword(String strPassword){
+
+         driver.findElement(password99Guru).sendKeys(strPassword);
+
+    }
+
+    //Click on login button
+
+    public void clickLogin(){
+
+            driver.findElement(login).click();
+
+    }
+    
+  
+
+    //Get the title of Login Page
+
+    public String getLoginTitle(){
+
+     return    driver.findElement(titleText).getText();
+
+    }
+
+
+    public void loginToGuru99(String strUserName,String strPasword){
+
+        //Fill user name
+
+        this.setUserName(strUserName);
+
+        //Fill password
+
+        this.setPassword(strPasword);
+
+        //Click Login button
+
+        this.clickLogin();        
+    }
+    
+    public void loginToGuru99BlankPassword(String strUserName){
+
+        //Fill user name
+
+        this.setUserName(strUserName);
+
+        //Fill password
+
+       // this.setPassword(strPasword);
+
+        //Click Login button
+
+        this.clickLogin();        
+    }
 
 }
