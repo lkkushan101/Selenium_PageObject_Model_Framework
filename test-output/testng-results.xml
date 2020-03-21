@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19900" started-at="2020-03-20T16:00:26Z" finished-at="2020-03-20T16:00:46Z">
+  <suite name="Default suite" duration-ms="22529" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19900" started-at="2020-03-20T16:00:26Z" finished-at="2020-03-20T16:00:46Z">
+    <test name="Default test" duration-ms="22529" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:28Z">
       <class name="TestClasses.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="setup" is-config="true" duration-ms="11714" started-at="2020-03-20T16:00:26Z" finished-at="2020-03-20T16:00:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="setup" is-config="true" duration-ms="14129" started-at="2020-03-21T04:12:05Z" finished-at="2020-03-21T04:12:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="test" duration-ms="8086" started-at="2020-03-20T16:00:38Z" finished-at="2020-03-20T16:00:46Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:TestClasses.LoginTest@589838eb]" name="test" duration-ms="8348" started-at="2020-03-21T04:12:19Z" finished-at="2020-03-21T04:12:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->

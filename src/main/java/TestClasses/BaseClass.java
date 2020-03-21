@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import Utility.ConstantVariables;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	  public static WebDriver driver  = null;
@@ -12,25 +13,26 @@ public class BaseClass {
 	public static WebDriver initilize()
 	   {
 
-	      //Use Of Singleton Concept and Initilize webDriver
+		  //Use Of Singleton Concept and Initilize webDriver
 	      if(driver == null)
 	      {
 	         if(ConstantVariables.browserName.equalsIgnoreCase("chrome"))
 	         {
-	            System.setProperty("webdriver.chrome.driver", "C:\\chromedriver76\\chromedriver.exe");
-	             driver =new ChromeDriver();
+	        	 WebDriverManager.chromedriver().version("76").setup();
+	     		 driver = new ChromeDriver();
 	         }
 	         else if(ConstantVariables.browserName.equalsIgnoreCase("Firefox"))
 	         {
-	            System.setProperty("webdriver.gecko.driver", "D:\\chrdrv\\geckodriver.exe");
+	        	 WebDriverManager.firefoxdriver().setup();
 	            driver=new FirefoxDriver();
 	         }
 	         else if(ConstantVariables.browserName.equalsIgnoreCase("IE"))
 	         {
-	            System.setProperty("webdriver.edge.driver", "D:\\chrdrv\\MicrosoftWebDriver.exe");
+	        	 WebDriverManager.iedriver().setup();
 	            driver=new EdgeDriver();
 	         }
 	        
+	      
 	      }
 	      
 	      //Perform Basic Operations
