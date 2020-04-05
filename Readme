@@ -5,8 +5,7 @@ Please install the following pre-requisites
 3. Install the following packages in pip install command 
     1. pip install pytest-selenium
     2. pip install openpyxl
-    3. pip install selenium
-    
-    4. To run the script type - pytest <path and script fle name> --driver Chrome (For FF - Firefox) --html <name of the html report>
+   
+    3. To run the script type - pytest <path and script fle name> --driver Chrome (For FF - Firefox) --html <name of the html report>
     Please make sure that you add the chromedriver path to your enviornmental variables. 
     
